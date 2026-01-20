@@ -1,26 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Cau co thich to khong?</title>
+    <meta charset="UTF-8">
+    <title>Thích quá của ta hông</title>
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
-        #label { margin-left: 10px; font-weight: bold; color: red; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #info {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <h3>cau co thich to khong?</h3>
-    <button onclick="sayYes()">Yes</button>
-    <button onclick="sayNo()">No</button>
-    <span id="label"></span>
+
+    <p id="info">chọn điiii</p>
+
+    <button onclick="chonThich()">thích vl</button>
+    <button onclick="chonKhongThich()">đồ dởm vl</button>
 
     <script>
-        function sayYes() {
-            document.getElementById('label').innerText = "<3";
+        function chonThich() {
+            document.getElementById("info").innerText = "hjhj ngại qơ";
         }
-        function sayNo() {
-            document.getElementById('label').innerText = "hoi dong y di ma";
+
+        function chonKhongThich() {
+            document.getElementById("info").innerText = ":(((";
         }
     </script>
+
 </body>
 </html>
+
